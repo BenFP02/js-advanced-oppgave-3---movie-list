@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Movie Tracker</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Watched Movie Tracker</h1>
+
+    <input
+      type="text"
+      id="filterInput"
+      placeholder="Search by title, director or movie stars"
+    />
+    <select id="sortSelect">
+      <option value="title">Sort by Title</option>
+      <option value="year">Sort by Year</option>
+      <option value="rating">Sort by Rating</option>
+    </select>
+
+    <button id="clearMoviesBtn">Delete All Movies</button>
+
+    <form id="movieForm">
+      <input type="text" id="titleInput" placeholder="Title" required />
+      <input type="number" id="yearInput" placeholder="Year" required />
+      <input type="text" id="directorInput" placeholder="Director" required />
+      <input
+        type="text"
+        id="starsInput"
+        placeholder="Starring Leads"
+        required
+      />
+
+      <div id="starRating" class="starRating">☆☆☆☆☆</div>
+      <input type="hidden" id="ratingInput" required />
+
+      <button type="submit">Add Movie</button>
+    </form>
+
+    <ul id="movieList"></ul>
+  </body>
+</html>

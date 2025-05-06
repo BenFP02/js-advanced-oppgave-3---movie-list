@@ -1,0 +1,55 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(233, 217, 199);
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+#filterInput {
+  width: 268px;
+}
+
+.starRating {
+  width: 100px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.starRating:hover {
+  color: gold;
+}
+
+.rating {
+  width: 66px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: black;
+}
+
+.rating:hover {
+  color: gold;
+}
+
+#movieForm {
+  margin: 0;
+}
+button {
+  background-color: rgb(175, 140, 94);
+
+  color: white;
+  border: none;
+  border-radius: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: burlywood;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
